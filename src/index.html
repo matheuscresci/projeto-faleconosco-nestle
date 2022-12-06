@@ -80,6 +80,84 @@
         </a>
       </div>
     </div>
+
+    <div class="mainNavigation__content">
+      <div class="mainNavigation__content--child">
+
+        <h1>fale conosco</h1>
+        <p>Por favor, preencha suas informações para que possamos lhe responder o mais breve possível</p>
+
+        <form method="post" autocomplete="on">
+
+          <div class="mainNavigation__content--div">
+            <label class="labels" for="inome">Nome Completo</label>
+            <input type="text" class="inputs" name="nome" id="inome" placeholder="Digite seu nome completo" required minlength="8" maxlength="40" autocomplete="name" class="inputs">
+          </div>
+
+          <div class="box-select">
+            <div class="box-select-sex">Sexo:</div>
+            <div>
+              <input type="radio" name="sexo" id="m" value="m">
+              <label for="m">Masculino</label>
+            </div>
+            <div>
+              <input type="radio" name="sexo" id="f" value="f">
+              <label for="f">Feminino</label>
+            </div>
+            <div>
+              <input type="radio" name="sexo" id="o" value="o">
+              <label for="o">Outro</label>
+            </div>
+          </div>
+
+          <div class="mainNavigation__content--div">
+            <label class="labels" for="iniver">Data de Nascimento</label>
+            <input type="date" name="niver" id="iniver" class="inputs" required>
+      
+          </div>
+          <div class="mainNavigation__content--div">
+            <label class="labels" for="iass">Assunto</label>
+            <select name="assunto" id="iass" class="inputs" required>
+              <option value="" selected>--- Selecione ---</option>
+              <option value="">Crítica</option>
+              <option value="">Elogio</option>
+              <option value="">Informação</option>
+              <option value="">Reclamação</option>
+              <option value="">Solicitação</option>
+              <option value="">Sugestão</option>
+              <option value="">Dúvidas Nutricionais</option>
+              <option value="">Chocolates Nestlé</option>
+            </select>
+          </div>
+          <div class="mainNavigation__content--div">
+            <label class="labels" for="iarq">Anexo (Arquivo JPG, PNG, PDF ou DOC)</label>
+            <input type="file" name="arq" id="iarq" class="inputs">
+      
+          </div>
+         <div class="mainNavigation__content--div">
+          <label class="labels" for="iemail">E-mail</label>
+          <input type="email" name="mail" id="iemail" class="inputs" autocomplete="email" required placeholder="Digite seu melhor e-mail aqui">
+      
+         </div>
+         <div class="mainNavigation__content--div">
+          <label class="labels" for="itel">Telefone para Contato</label>
+          <input type="tel" name="tel" id="itel" class="inputs" minlength="11" maxlength="13" required autocomplete="tel" placeholder="(XX)-XXXXX-XXXX">
+      
+         </div>
+         <div class="mainNavigation__content--div">
+          <label class="labels" for="imsg">Mensagem</label>
+          <textarea name="msg" id="imsg" cols="70" rows="10" required minlength="10" placeholder="por favor, nos diga como podemos lhe ajudar!"></textarea>
+         </div>
+         <div>
+          <input type="checkbox" name="aviso" id="iaviso">
+          <label for="iaviso" class="checkbox-paragrafo">Concordo que a Nestlé use meus dados pessoais, de contato e interações para me mandar comunicações de marketing por e-mail, SMS, WhatsApp e Telefone. Seu consentimento para este fim é voluntário e você é livre para retirá-lo a qualquer momento. Mais informações disponíveis na Política de Privacidade da Nestlé.</label>
+         </div>
+
+         <button type="submit">Enviar</button>
+         <button type="reset">Limpar</button>
+        </form>
+      </div>
+    </div>
   </main>
 
   <footer>

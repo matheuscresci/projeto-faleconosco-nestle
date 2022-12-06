@@ -332,16 +332,152 @@ header {
   margin-bottom: 50px;
 }
 
-/*display: flex;
+/* ------ Formulário ------ */
+
+.mainNavigation__content {
+  background-color: var(--azul1);
+  display: flex;
+  justify-content: center;
   align-items: center;
+  padding-top: 2rem;
+
   
-  color: #174f83;
-  font-size: 1em;
-  text-transform: uppercase;
-  font-weight: 700;
 
+}
+
+.mainNavigation__content--child {
   background-color: var(--branco1);
-  padding: 10px;
-  border-radius: 35px;
+  width: 40%;
+  height: 100%;
+  padding: 2rem;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 13px 13px 14px #0185b7;
+  
+}
 
-  width: 300px;*/
+.mainNavigation__content h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  font-size: 3em;
+  font-weight: 900;
+  color: #174f83;
+  
+  
+  text-transform: uppercase;
+}
+
+.mainNavigation__content p {
+  text-align: center;
+  padding-bottom: 3.5rem;
+  color: #174f83;
+  
+  font-size: 1.5em;
+  width: 73%;
+  display: block;
+  margin: auto;
+}
+
+.mainNavigation__content form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.mainNavigation__content--div {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs {
+  padding: 8px 5px;
+  outline: none;
+  border-radius: 20px;
+  height: 3rem;
+  border: 2px solid var(--marrom1);
+  color: var(--marrom1);
+  text-transform: uppercase;
+  padding-left: 1rem;
+  font-size: 1rem;
+  
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition-duration: .3s;
+}
+
+.inputs:focus {
+  
+  border: 2px solid var(--azul1);
+}
+
+textarea {
+  padding: 8px 5px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid var(--marrom1);
+  color: var(--marrom1);
+  text-transform: uppercase;
+  padding-left: 1rem;
+  font-size: 1rem;
+  
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+  transition-duration: .3s;
+}
+
+textarea:focus {
+  border: 2px solid var(--azul1);
+}
+
+.labels {
+  color: #174f83;
+  text-align: center;
+  font-size: 1.5rem;
+  padding-bottom: .5rem;
+  font-weight: bold;
+  
+}
+
+.box-select {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--marrom1);
+}
+
+.checkbox-paragrafo {
+  font-style: italic;
+  font-size: 14px;
+}
+
+.box-select-sex {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  padding: 1rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #174f83;
+  color: var(--branco1);
+  cursor: pointer;
+}
+
+button[type="reset"] {
+  padding: 1rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #174f83;
+  color: var(--branco1);
+  cursor: pointer;
+}
